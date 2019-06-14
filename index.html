@@ -34,21 +34,14 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     </head>
-
-<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hwdtjhic';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-</script>
 <script>
   window.intercomSettings = {
-    app_id: "hwdtjhic"
+    app_id: "hwdtjhic",
+    custom_launcher_selector: '.btn'
   };
-  var formSubmit = function () {
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-  var name = document.getElementById("name").value;
-  Intercom("update", { email: email, name: name })
-  Intercom('showNewMessage', message);
-}
 </script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/hwdtjhic';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+
     <body>
 
         <!-- Pre-loader -->
@@ -82,7 +75,7 @@
                             <a href="#features" class="nav-link">Features</a>
                         </li>
                     </ul>
-                    <button class="btn btn-sm navbar-btn" onclick="formSubmit()">BOOK A DEMO</button>
+                    <button class="btn btn-sm navbar-btn" id="contactbut" href="mailto:hwdtjhic@intercom-mail.com">BOOK A DEMO</button>
                 </div>
             </div>
         </nav>
@@ -99,8 +92,8 @@
                                     <h2>We detect and inspect damaged buildings</h2>
                                     <p class="mt-4 text-white-60">You provide property insurance for homeowners or businesses ? <br/>Our AI analyzes your entire portfolio and helps you avoid high severity claims that dip into your profits.</p>
                                     <div class="mt-5 mb-4">
-                                        <a href="#ModalCenter" data-toggle="modal" data-target="#ModalCenter" class="btn btn-custom m-2">GET A FREE AUDIT</a>
-                                        <a class="btn btn-outline-light m-1">CALL US: +1 415 532-9066</a>
+                                        <a href="mailto:hwdtjhic@intercom-mail.com" class="btn btn-custom m-2">GET A FREE AUDIT</a>
+                                        <a href="mailto:hwdtjhic@intercom-mail.com" class="btn btn-outline-light m-1">CALL US: +1 415 532-9066</a>
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +253,7 @@
                             <h4 class="mb-4">On average we increase by 500% the relevancy of on-site inspections</h4>
                             <p class="text-muted f-16">We work closely with you loss control and underwriting teams to help you save millions in future claims and on-site inspections</p>
                             <div class="pt-3 pb-3">
-                                <button class="btn btn-custom" onclick="formSubmit()">BOOK A DEMO <i class="mdi mdi-arrow-right"></button> </i> </a>
+                                <button class="btn btn-custom" href="mailto:hwdtjhic@intercom-mail.com">BOOK A DEMO <i class="mdi mdi-arrow-right"></button> </i> </a>
                             </div>
                         </div>
                     </div>
